@@ -1,2 +1,3 @@
-<?php 
-echo "hello";
+<? 
+	include "./core/auth.php";
+?>
