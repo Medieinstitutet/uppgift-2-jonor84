@@ -1,3 +1,3 @@
-<? 
-	include "./core/auth.php";
+<?php 
+	include "./core/index.php";
 ?>

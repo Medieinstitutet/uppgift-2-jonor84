@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteBase /core/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^([^/]*)$ main.php?module=$1 [NC,L]
+
+RewriteRule ^([a-zA-Z0-9_-]+)/(show)/([a-zA-Z0-9_-]+)$ main.php?module=$1&show=$2 [NC,L]
