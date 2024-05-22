@@ -22,7 +22,7 @@
 
 
     <!-- Start Card -->
-    <div class="col-lg-2 grow">
+    <div class="col-lg-3 grow">
         <div class="card shadow mb-4 d-flex align-items-center justify-content-center grow">
             <div class="card-body card-body1 p-3 container-fluid">
                 <div class="thumb w-100">
@@ -38,7 +38,7 @@
     <!-- End Card -->
 
     <!-- Start Card -->
-    <div class="col-lg-2 grow">
+    <div class="col-lg-3 grow">
         <div class="card shadow mb-4 d-flex align-items-center justify-content-center grow">
             <div class="card-body card-body1 p-3 container-fluid">
                 <div class="thumb w-100">
@@ -54,7 +54,7 @@
     <!-- End Card -->
 
     <!-- Start Card -->
-    <div class="col-lg-2 grow">
+    <div class="col-lg-3 grow">
         <div class="card shadow mb-4 d-flex align-items-center justify-content-center grow">
             <div class="card-body card-body1 p-3 container-fluid">
                 <div class="thumb w-100">
@@ -71,20 +71,4 @@
 
 
 </div>
-
-<!--<div class="row">
-
-                        <div class="col-xl-12 col-lg-7">
-                            <div class="card shadow mb-4">
-                                <div class="card-body">
-				                    <? echo $gloBackButton; ?>
-                                </div>
-                            </div>
-                        </div>
-</div>-->
-
-
-
-
-
 <!-- End content -->

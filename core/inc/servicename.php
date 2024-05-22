@@ -52,10 +52,10 @@ if ($gloUserNew) {
             $SERVICEADMINMODE = 0;
             $SHOWTOPSERVICENAME = 1;
         } else if ($_SESSION["service"] == "sys") {
-            $SERVICENAME = "SYS";
+            $SERVICENAME = "AdminPanel";
             $SERVICESTARTLINK = "/dashboard";
             $_SESSION['w'] = 0;
-            $COLLENGTH = 10;
+            $COLLENGTH = 12;
             $SERVICEADMINMODE = 1;
             $SHOWTOPSERVICENAME = 0;
         }

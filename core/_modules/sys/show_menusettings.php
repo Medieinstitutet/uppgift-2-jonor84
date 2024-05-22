@@ -17,25 +17,9 @@
 
 <div class="row">
 
-    
-  <!-- Start Card -->
-  <div class="col-lg-2 grow">
-  <div class="card shadow mb-4 d-flex align-items-center justify-content-center grow">
-    <div class="card-body card-body1 p-3 container-fluid"> 
-        <div class="thumb w-100">
-          <center><a href="<? echo $gloBaseModule; ?>&show=company"><i class="fas fa-fw fa-4x hover fa-address-book text-primary" style="padding: 25px 10px 25px;"></i></a></center>	
-        </div> 
-        <div class="w-100 bg-light d-flex p-25 align-items-center justify-content-center">
-          <h6 class="font-weight-bold text-primary pt-3">
-            Företagsdata <a href="<? echo $gloBaseModule; ?>&show=company"><i class="fas fa-arrow-circle-right" title="Administrera"></i></a></h6>
-        </div>          
-    </div>
-  </div>
-  </div>
-  <!-- End Card --> 
       
   <!-- Start Card -->
-  <div class="col-lg-2 grow">
+  <div class="col-xl-3 grow">
   <div class="card shadow mb-4 d-flex align-items-center justify-content-center grow">
     <div class="card-body card-body1 p-3 container-fluid"> 
         <div class="thumb w-100">
