@@ -7,10 +7,9 @@
     if ($gloAccess < $intAccess) {
         echo "<div class='$alertError'>$gloWrongAccess</div>";
     } else {
-
-    // if ($gloUserNew) {
-    //     header("location: /newaccount");
-    // }
+    if ($gloUserNew) {
+         header("location: /newaccount");
+    }
     ?>
 
     <!-- Begin content -->
