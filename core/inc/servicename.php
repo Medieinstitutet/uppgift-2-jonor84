@@ -37,11 +37,18 @@ if ($gloUserNew) {
             $COLLENGTH = 12;
             $SERVICEADMINMODE = 0;
             $SHOWTOPSERVICENAME = 1;
-        } else if ($_SESSION["service"] == "account2") {
-            $SERVICENAME = "Mitt Konto";
-            $SERVICESTARTLINK = "/account2";
-            $_SESSION['w'] = 0;
-            $COLLENGTH = 10;
+        } else if ($_SESSION["service"] == "client") {
+            $SERVICENAME = "Kundprofil";
+            $SERVICESTARTLINK = "/client";
+            $_SESSION['w'] = 1;
+            $COLLENGTH = 12;
+            $SERVICEADMINMODE = 0;
+            $SHOWTOPSERVICENAME = 1;
+        } else if ($_SESSION["service"] == "editclient") {
+            $SERVICENAME = "Kundprofil";
+            $SERVICESTARTLINK = "/editclient";
+            $_SESSION['w'] = 1;
+            $COLLENGTH = 12;
             $SERVICEADMINMODE = 0;
             $SHOWTOPSERVICENAME = 1;
         } else if ($_SESSION["service"] == "sys") {

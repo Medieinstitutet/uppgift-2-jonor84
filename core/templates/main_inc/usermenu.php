@@ -15,11 +15,13 @@
 
 			<div class="text-center">
 				<? if (!$gloUserNew) { ?>
+					<? if ($gloClientAccessLevel > 1) { ?>
 					<a class="dropdown-item" href='#' data-id='Switch' data-toggle='modal' data-bs-toggle='modal' data-bs-target='#Modal-Switch' data-target='#Modal-Switch'>
 
-						<span class="brand-title" title="Växla profil"><b><? echo $_SESSION['ACTIVECLIENT']; ?></b></span>
-						<br> <i class="fas fa-people-arrows fa-sm brand-title" title="Växla profil"></i> <small class="text-muted">Växla profil</small>
+						<span class="brand-title" title="Aktiv kund"><b><? echo $_SESSION['ACTIVECLIENT']; ?></b></span>
+						<!-- <br> <i class="fas fa-people-arrows fa-sm brand-title" title="Växla profil"></i> <small class="text-muted">Växla profil</small> -->
 					</a>
+					<? } ?>
 				<? } else { ?>
 					<small class="text-muted"><b><? echo $_SESSION['ACTIVECLIENT']; ?></b></small>
 				<? } ?>
@@ -27,9 +29,11 @@
 			<div class="dropdown-divider m-0"></div>
 
 			<? if (!$gloUserNew) { ?>
-
+				
 				<a class="dropdown-item" href="<? echo $gloBase; ?>account"> <i class="dropdown-icon fas fa-fw fa-user-circle brand-title"></i> Mitt Konto </a>
-				<a class="dropdown-item" href="<? echo $gloBase; ?>client"> <i class="dropdown-icon fas fa-fw fa-user-circle brand-title"></i> Kundprofil </a>
+				<? if ($gloClientAccessLevel > 1) { ?>
+					<a class="dropdown-item" href="<? echo $gloBase; ?>client"> <i class="dropdown-icon fas fa-fw fa-user-circle brand-title"></i> Kundprofil </a>
+				<? } ?>
 				<a class="dropdown-item" href="<? echo $gloBase; ?>support"> <i class="dropdown-icon fas fa-fw fa-life-ring brand-title"></i> Support </a>
 
 

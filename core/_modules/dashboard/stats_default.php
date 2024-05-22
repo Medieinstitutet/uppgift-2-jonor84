@@ -7,7 +7,11 @@
           <h3 class="m-0 font-weight-bold brand-title">Välkommen <? echo $gloFName; ?>! <img style="max-width: 30px; margin-top: -9px;" src="<? echo $gloImgURL; ?>/hellohand.webp"></h3>
         </div>
         <div class="col-xl-5">
+        <? if ($gloClientAccessLevel > 1) { ?>
           <div class="qoutebox text-center" style="font-size: 12px; white-space: break-spaces;">Aktiv kundprofil: <span class="font-weight-bold"><? echo $gloClientCompany; ?></span></div>
+        <? } else { ?>
+          <div class="qoutebox text-center" style="font-size: 12px; white-space: break-spaces;">Prenumerant</span></div>
+        <? } ?>
         </div>
       </div>
       <div class="card-body p-4">

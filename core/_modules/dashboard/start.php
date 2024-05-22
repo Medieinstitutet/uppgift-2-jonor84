@@ -8,5 +8,5 @@ if ($_SESSION["service"]) {
     // Include stats default - welcome
     include 'stats_default.php';
     // Include start apps
-    //include('cloudapps.php');
+    include 'cloudapps.php';
 } ?>

@@ -60,11 +60,11 @@ while ($arrRow = mysqli_fetch_row($arrRS)) {
         $_SESSION["gloCurrentClient"] = $gloDefaultProfile;
 
 
-        if (!$gloUserNew and !$gloUserNewClient) {
-            if ($_SESSION["gloCurrentClient"] == '0') {
-                $_SESSION["INFONOCLIENTDATA"] = "<a href='/editaccount&show=contact' class='btn btn-light'><i class='fas fa-arrow-alt-circle-down'></i>  Klicka här</a> och välj vilken kundprofil som ska laddas automatiskt vid inloggning. (Har du bara en att välja på så klicka på spara knappen bara.)<br><br>Om du inte kan välja någon profil alls behöver du skapa en ny kundprofil genom att <a class='btn btn-dark' href='/account&show=organisations'><i class='fas fa-arrow-alt-circle-down'></i>  klicka här</a>. ";
-            }
-        }
+        // if (!$gloUserNew and !$gloUserNewClient) {
+        //     if ($_SESSION["gloCurrentClient"] == '0') {
+        //         $_SESSION["INFONOCLIENTDATA"] = "<a href='/editaccount&show=contact' class='btn btn-light'><i class='fas fa-arrow-alt-circle-down'></i>  Klicka här</a> och välj vilken kundprofil som ska laddas automatiskt vid inloggning. (Har du bara en att välja på så klicka på spara knappen bara.)<br><br>Om du inte kan välja någon profil alls behöver du skapa en ny kundprofil genom att <a class='btn btn-dark' href='/account&show=organisations'><i class='fas fa-arrow-alt-circle-down'></i>  klicka här</a>. ";
+        //     }
+        // }
     }
     if ($gloIDLinkPID) {
         $NEWLINK = "&" . $gloIDLinkPID;
@@ -175,6 +175,7 @@ $resultAccessLevel = mysqli_query($SQLlink, $strSQLAccessLevel);
 $rowAccessLevel = mysqli_fetch_assoc($resultAccessLevel);
 
 $gloClientAccessLevel = $rowAccessLevel['aid'];
+if (!$gloClientAccessLevel) { $gloClientAccessLevel = 0; }
 
 $gloClientAccessBingo = $rowAccessLevel['activebingo'];
 $gloClientAccessBingosID = $rowAccessLevel['bingosid'];

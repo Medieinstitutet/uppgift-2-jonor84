@@ -173,6 +173,12 @@ if ($task == 'cookies') {
     $gloTemplateCookieUse = 1;
     $gloTemplatePageClass = "";
 
+} else if ($task == 'newsletters') { 
+    $gloTemplaceCardClass = 'form-signin-wider';
+    $gloTemplateInclude = 'newsletters.php';
+    $gloTemplateCookieUse = 0;
+    $gloTemplatePageClass = "-wider";
+
 } else { 
     $gloTemplaceCardClass = 'form-signin';
     $gloTemplateInclude = 'login.php';
