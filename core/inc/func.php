@@ -34,6 +34,9 @@ include $gloFunctionsFolder."inc-func-halo.php";
 // LOAD SUPPORT FUNCTIONS
 include $gloFunctionsFolder."inc-func-support.php";
 
+// LOAD NEWSLETTER FUNCTIONS
+include $gloFunctionsFolder."inc-func-newsletters.php";
+
 // LOAD SEND MAIL FUNCTIONS
 include $gloFunctionsFolder."inc-func-sendmail.php";
 

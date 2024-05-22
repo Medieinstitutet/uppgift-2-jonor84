@@ -445,7 +445,7 @@ include $gloTemplateSettings;
 
 
             <!-- Include tiny wysiwyg settings -->
-            <script src="../core/shared/js/tiny.js"></script>
+            <script src="core/shared/js/tiny.js"></script>
             <script>
                 const image_upload_handler_callback = (blobInfo, progress) => new Promise((resolve, reject) => {
                     const xhr = new XMLHttpRequest();
@@ -492,7 +492,7 @@ include $gloTemplateSettings;
             </script>
 
             <!-- Include datatables settings -->
-            <? include('datatable-settings.php'); ?>
+            <? include('core/inc/datatable-settings.php'); ?>
 
             <script>
                 function passFunction() {
@@ -509,7 +509,7 @@ include $gloTemplateSettings;
                         x.type = "password";
                     }
                 }
-                <?php include_once "shared/scripts.php" ?>
+                <?php include_once "core/shared/scripts.php" ?>
             </script>
 
 

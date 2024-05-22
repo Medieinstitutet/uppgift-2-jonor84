@@ -75,28 +75,4 @@ if (isset($_POST['frmUser'])) {
 }
 
 
-// SEND MAIL
-$to = $strEmail;
-$subject = "Du har fått ett konto hos $gloDomain";
-$message = "Du har fått ett konto hos $gloDomain!
-Ett konto har registrerats åt dig.
-Klicka på länken för att få dina inloggningsuppgifter.
-OBSERVERA att länken fungerar endast 1 gång.
-Om du skulle klicka på den och glömma bort dina inloggningsuppgifter, kontakta administratören
-på $gloSysEmail
-
-Observera att det är viktigt att skriva lösenordet exakt som det står.
-Kom också ihåg att byta lösenordet när du har loggat in.
-http://$gloDomain/index.php?task=newuser&key=$hash_key";
-
-$headers = "Reply-To: $gloCompany <$gloSysEmail>\r\n" .
-"Return-Path: $gloCompany <$gloSysEmail>\r\n" .
-"From: $gloCompany <$gloSysEmail>\r\n" .
-"Content-Type: text/plain\r\n" .
-"X-Mailer: PHP/" . phpversion();
-//mail($to, $subject, $message, $headers);
-
-
-
-
 ?>

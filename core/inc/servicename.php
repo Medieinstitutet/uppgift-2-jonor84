@@ -51,6 +51,34 @@ if ($gloUserNew) {
             $COLLENGTH = 12;
             $SERVICEADMINMODE = 0;
             $SHOWTOPSERVICENAME = 1;
+        } else if ($_SESSION["service"] == "newsletters") {
+            $SERVICENAME = "Nyhetsbrev";
+            $SERVICESTARTLINK = "/newsletters";
+            $_SESSION['w'] = 1;
+            $COLLENGTH = 12;
+            $SERVICEADMINMODE = 0;
+            $SHOWTOPSERVICENAME = 1;
+        } else if ($_SESSION["service"] == "mysubscriptions") {
+            $SERVICENAME = "Mina Prenumerationer";
+            $SERVICESTARTLINK = "/mysubscriptions";
+            $_SESSION['w'] = 1;
+            $COLLENGTH = 12;
+            $SERVICEADMINMODE = 0;
+            $SHOWTOPSERVICENAME = 1;
+        } else if ($_SESSION["service"] == "mynewsletters") {
+            $SERVICENAME = "Mina Nyhetsbrev";
+            $SERVICESTARTLINK = "/mynewsletters";
+            $_SESSION['w'] = 1;
+            $COLLENGTH = 12;
+            $SERVICEADMINMODE = 0;
+            $SHOWTOPSERVICENAME = 1;
+        } else if ($_SESSION["service"] == "mysubscribers") {
+            $SERVICENAME = "Mina Prenumeranter";
+            $SERVICESTARTLINK = "/mysubscribers";
+            $_SESSION['w'] = 1;
+            $COLLENGTH = 12;
+            $SERVICEADMINMODE = 0;
+            $SHOWTOPSERVICENAME = 1;
         } else if ($_SESSION["service"] == "sys") {
             $SERVICENAME = "AdminPanel";
             $SERVICESTARTLINK = "/dashboard";
