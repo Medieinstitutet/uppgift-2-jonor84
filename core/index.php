@@ -27,26 +27,26 @@ if (!$BRAND) { echo "EMPTY"; } else {
 	date_default_timezone_set("Europe/Stockholm");  
 		
 	// GET MYSQL
-	include_once("./core/mysqli.php");
+	include_once("core/mysqli.php");
 
 	// GET SETTINGS
-	include_once("./core/settings.php");
+	include_once("core/settings.php");
 
 	// GET FUNCTIONS
-	include_once("./core/inc/func.php");
+	include_once("core/inc/func.php");
 			
 	// GET GLOBAL DATA
-	include_once("./core/inc/globaldata.php");
+	include_once("core/inc/globaldata.php");
 
 	// INCLUDE BRANDING
-	include_once("./core/inc/branding.php");
+	include_once("core/inc/branding.php");
 
 	// GET VENDOR
-	require_once('./core/vendor/autoload.php');
+	require_once('core/vendor/autoload.php');
 
 	// START WITH HTML FOR PAGE
 		// INCLUDE LOGIN THEME
-		include "./$gloTemplateDir/auth/$gloBrandTemplateLogin/index.php";
+		include $gloTemplateDir."/auth/$gloBrandTemplateLogin/index.php";
 
 	ob_end_flush();
 }

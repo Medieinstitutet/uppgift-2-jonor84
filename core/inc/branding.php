@@ -291,9 +291,9 @@ if (!$gloBRANDEXIST) {
       $gloBrandLogoMainShow = "<h3 style='margin-top: 10px;'>" . $gloBrandSiteName . "</h3>";
     } else {
       if ($gloBrandLogoMain == "black") {
-        $gloBrandLogoMainShow = "<img src='" . $gloLogosDir . "/" . $gloBrandLogoBlack . "' style='width: 200px; margin-top: -33px;margin-bottom: -16px; padding:0px;'>";
+        $gloBrandLogoMainShow = "<img src='" . $gloLogosDir . "/" . $gloBrandLogoBlack . "' style='width: 200px; margin-top: -15px; margin-bottom: -10px; padding:0px;'>";
       } else {
-        $gloBrandLogoMainShow = "<img src='" . $gloLogosDir . "/" . $gloBrandLogoWhite . "' style='width: 200px; margin-top: -28px;margin-bottom: -16px; padding:0px;'>";
+        $gloBrandLogoMainShow = "<img src='" . $gloLogosDir . "/" . $gloBrandLogoWhite . "' style='width: 200px; margin-top: -15px; margin-bottom: -10px; padding:0px;'>";
       }
     }
 }

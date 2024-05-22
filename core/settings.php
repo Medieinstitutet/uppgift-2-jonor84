@@ -23,8 +23,13 @@ $gloSysMailName = 'System'; // SYSTEM NAME OUTGOING
 $gloSysNoReplyMail = 'send@myhalo.se'; // SYSTEM MAIL NOREPLY
 
 //FOLDERS/PATHS HERE
-$gloDataFolder = "core/shared/globaldata/";
-$gloFunctionsFolder = "core/shared/functions/";
+if ($LOGGEDIN) { 
+    $gloDataFolder = "shared/globaldata/";
+    $gloFunctionsFolder = "shared/functions/";
+} else { 
+    $gloDataFolder = "core/shared/globaldata/";
+    $gloFunctionsFolder = "core/shared/functions/";
+}
 
 $gloSharedFolder = "system"; // SET GLOBAL SHARED FOLDER (NOT WORKING YET - JOHAN WORKING ON IT)
 
@@ -35,10 +40,11 @@ $gloPathImg = $gloSysPath . "/public/images";
 $gloImgURL  = $SysDomain . "/public/images";
 
 //Templates
-$gloTemplateDir  = "./core/templates";
 if ($LOGGEDIN) { 
+    $gloTemplateDir  = "./templates";
     $gloTemplateSettings = $gloTemplateDir.'/main_inc/settings.php';
 } else { 
+    $gloTemplateDir  = "./core/templates";
     $gloTemplateSettings = $gloTemplateDir.'/auth_inc/settings.php';
 }
 
@@ -64,7 +70,7 @@ $gloProfileBKGPath = $gloSysPath . "/public/profilebkg/";
 
 //Preloader
 $gloPreloaderDir = $SysDomain . "/public/preloaders";
-$gloPreloaderDir2 = "public/images/preloaders";
+$gloPreloaderDir2 = "./public/images/preloaders";
 $gloPreloaderPath = $gloSysPath . "/public/preloaders/";
 
 $gloLoaderIMG = $gloPreloaderDir2."/preloaders/loaderblue.svg"; //loaderblack for black and loader for white. loaderblue for primary blue.

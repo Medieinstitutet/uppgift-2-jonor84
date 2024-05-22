@@ -5,7 +5,7 @@
 $DateActive = 1;
 $ServiceNameActive = 1;
 $SearchActive = 0;
-$AlertsActive = 1;
+$AlertsActive = 0;
 $AlertsActive2 = 0;
 //$LangActive = 0;
 $CartActive = 0;
@@ -25,28 +25,27 @@ if ($gloWindow) {
     $SideMenuActive = 1;
 }
 
+
 $gloTemplateName = $gloBrandTemplateMain;
-$gloTemplatePath = $SysDomain . "/core/templates/main/" . $gloTemplateName;
-$gloTemplate = $gloTemplatePath . $gloTemplateName;
-$gloMainPath = $gloSystemPath . "/main";
+$gloTemplate = $SysDomain . "/core/templates/";
+$gloTemplateMain = $gloTemplate ."main/". $gloTemplateName;
+$gloMainIncPath = $gloTemplateDir . "/main_inc";
 
-$gloTemplateContent = $gloMainPath . '/content.php';
-$gloTemplateSidemenu = $gloMainPath . '/sidemenu.php';
-$gloTemplateNotifications = $gloMainPath . '/notification.php';
+$gloTemplateContent = $gloMainIncPath . '/inc-page.php';
 
-$gloTemplateAlerts = $gloMainPath . '/alerts.php';
-$gloTemplateAlerts2 = $gloMainPath . '/alerts2.php';
+$gloTemplateSidemenu = $gloMainIncPath . '/sidemenu.php';
+$gloTemplateNotifications = $gloMainIncPath . '/notification.php';
 
-$gloTemplateMessages = $gloMainPath . '/messages.php';
-$gloTemplateUsermenu = $gloMainPath . '/usermenu.php';
-$gloTemplateUsermenu2 = $gloMainPath . '/usermenu2.php';
+// $gloTemplateAlerts = $gloMainIncPath . '/alerts.php';
 
+// $gloTemplateMessages = $gloMainIncPath . '/messages.php';
+$gloTemplateUsermenu = $gloMainIncPath . '/usermenu.php';
 
-$gloTemplateTopappsmenu = $gloMainPath . '/topappsmenu.php';
-$gloTemplateFullwindowmenu = $gloMainPath . '/fullwindowmenu.php';
-$gloTemplateCart = $gloMainPath . '/cart.php';
+// $gloTemplateTopappsmenu = $gloMainIncPath . '/topappsmenu.php';
+$gloTemplateFullwindowmenu = $gloMainIncPath . '/fullwindowmenu.php';
+// $gloTemplateCart = $gloMainIncPath . '/cart.php';
 
-$gloTemplateLoader = $SysDomain . "/core/system/images/loaderblue.svg";
+$gloTemplateLoader = $SysDomain . "/public/preloaders/loaderblue.svg";
 //$gloLoaderIMG
 
 // Dark or Light sign in
