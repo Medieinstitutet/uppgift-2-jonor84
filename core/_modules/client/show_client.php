@@ -87,7 +87,7 @@
 				</div>
 				<div class="d-flex align-items-center mb-3 mt-3">
 					<div class="me-4 text-center text-primary">
-						<span><i class="fe fe-phone fs-20"></i></span>
+						<span><i class="fa fa-phone"></i></span>
 					</div>
 					<div>
 						<strong><a href="tel:<? echo $rowPhone; ?>" title="phone link"><? echo $rowPhone; ?></a></strong>
@@ -95,7 +95,7 @@
 				</div>
 				<div class="d-flex align-items-center mb-3 mt-3">
 					<div class="me-4 text-center text-primary">
-						<span><i class="fe fe-mail fs-20"></i></span>
+						<span><i class="fa fa-envelope"></i></span>
 					</div>
 					<div>
 						<strong><a href="mailto:<? echo $rowEmail; ?>" title="email link"><? echo $rowEmail; ?></a></strong>
