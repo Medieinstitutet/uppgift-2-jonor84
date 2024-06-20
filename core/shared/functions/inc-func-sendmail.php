@@ -86,7 +86,7 @@ function sendMailPDF($mailToAddress, $mailToName, $mailSubject, $mailMessage, $m
 	$pdfattachment = $pdf->Output($invoicename, 'S');
 
 	//CHANGE THIS
-	$client = new PostmarkClient('ab34a810-3591-4ef0-a626-7b7ecd530554'); //CHANGE THIS
+	$client = new PostmarkClient('xxxxx'); //CHANGE THIS
 	$attachment = PostmarkAttachment::fromRawData($pdfattachment, $invoicename, "application/pdf");
 
 	$fromMail = $gloBrandSiteName . ' <' . $gloSysMail . '>';
@@ -155,7 +155,7 @@ function sendMailPM($mailToAddress, $mailToName, $mailSubject, $mailMessage, $ma
     // Define and send to log: $sendtype, $receiver, $senderid, $message, $subject
     addLogSentMessages($Sendtype, $mailToAddress, $mailuserID, $mailMessage, $mailSubject);
 
-	$client = new PostmarkClient('ab34a810-3591-4ef0-a626-7b7ecd530554'); //CHANGE THIS
+	$client = new PostmarkClient('xxxxx'); //CHANGE THIS
 	// Send email:
 	$sendResult = $client->sendEmailWithTemplate(
 		$fromMail,
@@ -194,7 +194,7 @@ function sendMailSMS($smsNumber, $smsName, $smsMessage, $userid)
     // Define and send to log: $sendtype, $receiver, $senderid, $message, $subject
     addLogSentMessages($Sendtype, $smsNumber, $userid, $smsMessage, $smsName);
 
-	$client = new PostmarkClient('ab34a810-3591-4ef0-a626-7b7ecd530554'); //CHANGE THIS
+	$client = new PostmarkClient('xxxxx'); //CHANGE THIS
 	// Send email:
 	$sendResult = $client->sendEmailWithTemplate(
 		"send@myhalo.se",
