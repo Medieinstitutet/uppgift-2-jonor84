@@ -7,56 +7,36 @@ if (isset($_POST['frmEmail'])) {
   $strFindus     = mysqli_real_escape_string($SQLlink, $_POST['frmFindus']);
   $strPNR        = mysqli_real_escape_string($SQLlink, $_POST['frmPNR']);
 
-  $strFullName = $strFName . " " . $strSName;
+  $strAdress1 = mysqli_real_escape_string($SQLlink, $_POST['frmAdress']);
+  $strZip = mysqli_real_escape_string($SQLlink, $_POST['frmZip']);
+  $strCity1 = mysqli_real_escape_string($SQLlink, $_POST['frmCity']);
+
+  $ClientReg       = mysqli_real_escape_string($SQLlink, $_POST['frmClient']);
+
+  $strFullName = ucwords($strFName . " " . $strSName);
 
   // ORG DATA
-  $strContact1 = $strFullName;
-  $strORGID = $strPNR;
-  $strORGTYPE = 1;
-
-  $strORGNAME1 = $strFullName;
-  $strORGAdress1 = mysqli_real_escape_string($SQLlink, $_POST['frmORGAdress']);
-  $strORGZip = mysqli_real_escape_string($SQLlink, $_POST['frmORGZip']);
-  $strORGCity1 = mysqli_real_escape_string($SQLlink, $_POST['frmORGCity']);
-  $strORGEMAIL = $strEmail;
-
+	$strORGID			= mysqli_real_escape_string($SQLlink, $_POST['frmOrgID']);
+	$strORGNAME1			= mysqli_real_escape_string($SQLlink, $_POST['frmOrgName']);
+	$strTypeID  		= mysqli_real_escape_string($SQLlink, $_POST['frmOrgType']);
+  $strContact = $strFullName;
+	
   $strORGNAME = strtoupper($strORGNAME1);
-  $strContact = ucwords($strContact1);
-  $strORGAdress = ucwords($strORGAdress1);
-  $strORGCity = ucwords($strORGCity1);
+  $strAdress = ucwords($strAdress1);
+  $strCity = ucwords($strCity1);
   $strCountryID = 1;
 
-  // ADD CLIENT PROFILE / "client data" 
   $strActive = 1; // Active 1/0
-  $strAFID = $gloResellerID; // Reseller ID
   $strAccess = 3; // ACCESS 
   $strAccepted = 1; // ACCEPTED    
-  $strPostA = $strORGAdress;
-  $strPostAZip = $strORGZip;
-  $strPostATown = $strORGCity;
-  $strInvoiceA = $strORGAdress;
-  $strInvoiceAZip = $strORGZip;
-  $strInvoiceATown = $strORGCity;
+  $strPostA = $strAdress;
+  $strPostAZip = $strZip;
+  $strPostATown = $strCity;
+  $strInvoiceA = $strAdress;
+  $strInvoiceAZip = $strZip;
+  $strInvoiceATown = $strCity;
   $strOrgNew = 0; // DONT NEED TO ACCEPT 
   $strCID = generateClientID();
-
-  // ADD USER CLIENT
-  // $strSQLClient = "
-	// 	INSERT INTO data_clients
-	// 	 (clientid,brand,orgnew,orgadmin,typeid,companyid,companyname,
-  //         contactname,phone,email,active,countryid,
-  //         userid,afid,paddress,pzip,ptown,
-  //         iaddress,izip,itown,orgemail,orgiemail,
-  //         added,updated) 
-	// 	VALUES 
-	// 	 ('$strCID','$BRAND','$strOrgNew','$gloUID','$strORGTYPE','$strORGID','$strORGNAME',
-  //         '$strContact','$strPhone','$strEmail','$strActive','$strCountryID',
-  //         '$gloUID','$strAFID','$strPostA','$strPostAZip','$strPostATown',
-  //         '$strInvoiceA','$strInvoiceAZip','$strInvoiceATown','$strORGEMAIL','$strORGEMAIL',
-  //         '$gloTimeStamp','$gloTimeStamp')";
-  // mysqli_query($SQLlink, $strSQLClient);
-
-  // $CreatedClientID = $SQLlink->insert_id;
 
   $UserNew       = 0;
   $UserNewClient = 0;
@@ -64,13 +44,38 @@ if (isset($_POST['frmEmail'])) {
   $UserAccept = 1;
   $UserAccessActive = 1;
 
-  // ADD ACCESS TO USER CLIENT
-  // $strSQLClientAccess = "
-	// 	INSERT INTO data_clients_access
-	// 	 (uid,cid,aid,added,addeduid,updated,updateduid,accepted,active) 
-	// 	VALUES 
-	// 	 ('$gloUID','$CreatedClientID','$UserAccess','$gloTimeStamp','$gloUID','$gloTimeStamp','$gloUID','$UserAccept','$UserAccessActive')";
-  // mysqli_query($SQLlink, $strSQLClientAccess);
+  if ($ClientReg)  { 
+
+  // ADD USER CLIENT
+  $strSQLClient = "
+		INSERT INTO data_clients
+        (clientid,brand,orgnew,orgadmin,typeid,companyid,companyname,
+          contactname,phone,email,active,countryid,
+          userid,afid,paddress,pzip,ptown,
+          iaddress,izip,itown,orgemail,orgiemail,
+          added,updated) 
+		VALUES 
+        ('$strCID','$BRAND','$strOrgNew','$gloUID','$strTypeID','$strORGID','$strORGNAME',
+          '$strContact','$strPhone','$strEmail','$strActive','$strCountryID',
+          '$gloUID','$gloResellerID','$strPostA','$strPostAZip','$strPostATown',
+          '$strInvoiceA','$strInvoiceAZip','$strInvoiceATown','$strEmail','$strEmail',
+          '$gloTimeStamp','$gloTimeStamp')";
+  mysqli_query($SQLlink, $strSQLClient);
+
+  $CreatedClientID = $SQLlink->insert_id;
+
+    // ADD ACCESS TO USER CLIENT
+    $strSQLClientAccess = "
+    INSERT INTO data_clients_access 
+      (uid,cid,aid,added,addeduid,updated,updateduid,accepted,active) 
+    VALUES 
+      ('$gloUID','$CreatedClientID','$UserAccess','$gloTimeStamp','$gloUID','$gloTimeStamp','$gloUID','$UserAccept','$UserAccessActive')";
+    mysqli_query($SQLlink, $strSQLClientAccess);
+
+    $_SESSION['gloCurrentClient'] = $CreatedClientID;
+  } else { 
+    $_SESSION['gloCurrentClient'] = 0;
+  }
 
 
   // UPDATE USER
@@ -97,21 +102,9 @@ if (isset($_POST['frmEmail'])) {
     $event = "newaccount";
     $notes = "Profilen blev ifylld för första gången av användaren";
     addLog($event, $notes);
-
-    if ($SHOWSTEPS) {
-      if ($gloIDLinkPID) {
-        $NEXTURL = "/dashboard&" . $gloIDLinkPID;
-      } else if ($gloIDLinkCID) {
-        $NEXTURL = "/dashboard&" . $gloIDLinkCID;
-      } else {
-        $NEXTURL = "/dashboard";
-      }
-    } else {
-      $NEXTURL = "/dashboard";
-    }
-    $_SESSION['gloCurrentClient'] = 0;
+    
     unset($_SESSION["service"]);
-    header("Location: $NEXTURL");
+    header("Location: /dashboard");
   } else {
 
     $_SESSION['error'] = "Profilen kunde inte uppdateras korrekt. Var god försök igen eller kontakta support.";
