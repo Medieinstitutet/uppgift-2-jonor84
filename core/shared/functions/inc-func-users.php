@@ -431,7 +431,7 @@ function addCodeAuth($type, $reciever, $userid, $code)
     if (empty($UID)) {
         $UID = $Add0;
     }
-    $Dateexpire = date('Y-m-d H:i', strtotime('+20 minutes'));
+    $Dateexpire = date('Y-m-d H:i', strtotime('+5 minutes'));
 
     // Add to DB
     $strSQLADD = "
@@ -670,6 +670,130 @@ function checkUserApp($gloUID, $AppID)
     }
     return $gloHas;
 }
+//            $AppIDCZ = 3; // app id customerzone
+//            $AppIDMSite = 2; // app id msite
+
+
+// //CHECK IF USER HAS CLOUD START APPS
+// function checkMoonApps($gloUID)
+// {
+//     global $SQLlink, $gloAccess, $gloTimeStamp, $SystemAdmin, $gloTotalMGameplaces, $gloCheckAllowedBingo, $gloCheckAllowedSite, $gloCheckAllowedHalo, $gloCheckAllowedSales, $gloCheckAllowedCZone, $gloCheckAllowedOpenHalo, $gloCheckAppLogo, $gloCheckAppSite, $gloCheckAppCZone, $gloCheckAppBingo, $gloCheckAppHalo, $gloCheckAppCV, $gloCheckAppSales, $gloCheckAppOpenHalo;
+
+//     // Global variables for checking if customer is allowed to service (row 382 inc-globaldatamain.php)
+//     // $gloCheckAllowedBingo - $gloCheckAllowedSite - $gloCheckAllowedHalo - gloCheckAllowedSales - $gloCheckAllowedCZone - $gloCheckAllowedOpenHalo
+
+//     // Global variables for checking if user has app (row 389 inc-globaldatamain.php)
+//     // $gloCheckAppLogo - $gloCheckAppSite - $gloCheckAppCZone - $gloCheckAppBingo - $gloCheckAppHalo - $gloCheckAppCV - $gloCheckAppSales
+
+//     if ($SystemAdmin) {
+//         // APPS ONLY FOR STAFF
+//         if ($gloAccess == 7) {
+//             $AppLogoEnabled = 0;
+//             $AppSiteEnabled = 1;
+//             $AppCZoneEnabled = 0;
+//             $AppBingoEnabled = 0;
+//             $AppHaloEnabled = 0;
+//             $AppCvEnabled = 0;
+//             $AppSalesEnabled = 1;
+//             $AppOpenHaloEnabled = 0;
+//         } else {
+//             $AppLogoEnabled = 0;
+//             $AppSiteEnabled = 1;
+//             $AppCZoneEnabled = 0;
+//             $AppBingoEnabled = 1;
+//             $AppHaloEnabled = 1;
+//             $AppCvEnabled = 0;
+//             $AppSalesEnabled = 1;
+//             $AppOpenHaloEnabled = 1;
+//         }
+//     } else {
+//         $AppLogoEnabled = 0;
+//         $AppSiteEnabled = 1;
+//         $AppCZoneEnabled = 0;
+//         $AppBingoEnabled = 1;
+//         $AppHaloEnabled = 0;
+//         $AppCvEnabled = 0;
+//         $AppSalesEnabled = 0;
+//         $AppOpenHaloEnabled = 0;
+//     }
+
+
+//     //CHECK APP LOGO
+
+//     //CHECK APP SITE
+//     if ($gloCheckAllowedSite and $AppSiteEnabled) {
+//         if (!$gloCheckAppSite) {
+//             $strSQLAppMSite = "
+// 				INSERT INTO data_mycloudapps
+// 				(uid, appid, active, added, updated) 
+// 				VALUES 
+// 				('$gloUID','2','1','$gloTimeStamp','$gloTimeStamp')";
+//             mysqli_query($SQLlink, $strSQLAppMSite);
+//         }
+//     }
+
+//     // CHECK APP CUSTOMERZONE
+//     if ($gloCheckAllowedCZone and $AppCZoneEnabled) {
+//         if (!$gloCheckAppCZone) {
+//             $strSQLAppCZ = "
+// 				INSERT INTO data_mycloudapps
+// 				(uid, appid, active, added, updated) 
+// 				VALUES 
+// 				('$gloUID','3','1','$gloTimeStamp','$gloTimeStamp')";
+//             mysqli_query($SQLlink, $strSQLAppCZ);
+//         }
+//     }
+
+//     //CHECK APP BINGO
+//     if ($gloCheckAllowedBingo and $AppBingoEnabled) {
+//         if (!$gloCheckAppBingo) {
+//             $strSQLAppMBINGO = "
+// 				INSERT INTO data_mycloudapps
+// 				(uid, appid, active, added, updated) 
+// 				VALUES 
+// 				('$gloUID','4','1','$gloTimeStamp','$gloTimeStamp')";
+//             mysqli_query($SQLlink, $strSQLAppMBINGO);
+//         }
+//     }
+
+
+//     //CHECK APP HALO
+//     if ($gloCheckAllowedHalo and $AppHaloEnabled) {
+//         if (!$gloCheckAppBingo) {
+//             $strSQLAppMHALO = "
+// 				INSERT INTO data_mycloudapps
+// 				(uid, appid, active, added, updated) 
+// 				VALUES 
+// 				('$gloUID','5','1','$gloTimeStamp','$gloTimeStamp')";
+//             mysqli_query($SQLlink, $strSQLAppMHALO);
+//         }
+//     }
+//     //CHECK APP CV
+
+//     //CHECK APP SALES
+//     if ($gloCheckAllowedSales and $AppSalesEnabled) {
+//         if (!$gloCheckAppSales) {
+//             $strSQLAppMSales = "
+// 				INSERT INTO data_mycloudapps
+// 				(uid, appid, active, added, updated) 
+// 				VALUES 
+// 				('$gloUID','7','1','$gloTimeStamp','$gloTimeStamp')";
+//             mysqli_query($SQLlink, $strSQLAppMSales);
+//         }
+//     }
+
+//     //CHECK APP OPENHALO
+//     if ($gloCheckAllowedOpenHalo and $AppOpenHaloEnabled) {
+//         if (!$gloCheckAppOpenHalo) {
+//             $strSQLAppMOpenHalo = "
+// 				INSERT INTO data_mycloudapps
+// 				(uid, appid, active, added, updated) 
+// 				VALUES 
+// 				('$gloUID','8','1','$gloTimeStamp','$gloTimeStamp')";
+//             mysqli_query($SQLlink, $strSQLAppMOpenHalo);
+//         }
+//     }
+// }
 
 //GET FULL NAME OF A USER
 function UserFullName($UserID)

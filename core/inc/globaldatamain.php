@@ -73,7 +73,7 @@ if ($_SESSION["service"] == "haloone") {
 }
 
 // GET SITE SETTINGS FROM DATEBASE
-// include $gloDataFolder . "inc-global-sitesettings.php";
+include $gloDataFolder . "inc-global-sitesettings.php";
 
 // INCLUDE PAGES/MENU AND APPS/MODULES
 include $gloDataFolder . "inc-global-pages.php";

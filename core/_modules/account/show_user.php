@@ -93,7 +93,7 @@ if ($gloUserNew || $gloUserNewClient) {
                     </div>
                     <div class="d-flex align-items-center mb-3 mt-3">
                         <div class="me-4 text-center text-primary">
-                            <span><i class="fa fa-envelope"></i></span>
+                            <span><i class="fas fa-envelope"></i></span>
                         </div>
                         <div>
                             <strong><a href="mailto:<? echo $rowEmail; ?>" title="email link">

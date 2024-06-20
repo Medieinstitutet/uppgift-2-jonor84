@@ -55,7 +55,7 @@ if ($_SESSION["service"] != "mysubscribers") {
         </div>
         <?php } else { ?>
             <div class="card-body">
-                Just nu finns det inga aktiva prenumenationer av nyhetsbrev. Gå till <a class="btn btn-primary" href='/newsletters'><i class="fas fa-mail-bulk"></i> Nyhetsbrev</a> om du vill starta en prenumeration.
+                Just nu finns det inga aktiva prenumeneranter av dina nyhetsbrev.
                 <?php echo $HRB; ?>
                 <?php echo $gloCloseButton; ?>
             </div>

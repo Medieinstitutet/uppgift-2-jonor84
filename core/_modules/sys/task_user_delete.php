@@ -3,6 +3,9 @@
 
 	$strID = mysqli_real_escape_string($SQLlink,$_GET['id']);
 
+	$strSQL = "DELETE FROM workplace_workers WHERE user_id = '$strID'";
+	mysqli_query($SQLlink,$strSQL);
+	
 	$strSQL = "DELETE FROM data_users WHERE id = '$strID' LIMIT 1";
 	mysqli_query($SQLlink,$strSQL);
 	
