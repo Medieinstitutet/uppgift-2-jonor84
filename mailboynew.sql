@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Värd: localhost:3306
--- Tid vid skapande: 22 maj 2024 kl 23:50
--- Serverversion: 10.6.17-MariaDB-cll-lve
+-- Tid vid skapande: 20 jun 2024 kl 13:28
+-- Serverversion: 10.6.18-MariaDB-cll-lve
 -- PHP-version: 8.1.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -133,7 +133,30 @@ INSERT INTO `data_activities` (`id`, `brand`, `uid`, `resellerid`, `clientid`, `
 (44, 'mailboy', 0, 1, 0, '0', 'register', '3562364093', 'Användaren registrerade sig.', '2024-05-22 23:31:58'),
 (45, 'mailboy', 6, 1, 0, '6a3036801f6bde23b0f809ce9c701662', 'login', '3562364093', 'Inlogging: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', '2024-05-22 23:32:16'),
 (46, 'mailboy', 6, 1, 0, '6a3036801f6bde23b0f809ce9c701662', 'newaccount', '3562364093', 'Profilen blev ifylld för första gången av användaren', '2024-05-22 23:45:52'),
-(47, 'mailboy', 6, 1, 0, '6a3036801f6bde23b0f809ce9c701662', 'login', '3562364093', 'Inlogging: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', '2024-05-22 23:46:57');
+(47, 'mailboy', 6, 1, 0, '6a3036801f6bde23b0f809ce9c701662', 'login', '3562364093', 'Inlogging: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', '2024-05-22 23:46:57'),
+(48, 'mailboy', 1, 1, 0, 'caff6a3c593e983ed7a09d2b5b6ac656', 'login', '1509946757', 'Inlogging: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36', '2024-06-03 17:17:42'),
+(49, 'mailboy', 6, 1, 0, 'c8ac37653440a043bb1bf3b870292870', 'login', '1427678049', 'Inlogging: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36', '2024-06-20 10:52:20'),
+(50, 'mailboy', 7, 1, 0, '0', 'usernew', '1427678049', 'Du registrerade kontot.', '2024-06-20 11:32:45'),
+(51, 'mailboy', 0, 1, 0, '0', 'register', '1427678049', 'Användaren registrerade sig.', '2024-06-20 11:32:45'),
+(52, 'mailboy', 7, 1, 0, '0576b1f7679d36bb302102597c6d602a', 'login', '1427678049', 'Inlogging: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36', '2024-06-20 11:33:04'),
+(53, 'mailboy', 5, 1, 0, '0576b1f7679d36bb302102597c6d602a', 'login', '1427678049', 'Inlogging: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36', '2024-06-20 11:39:33'),
+(54, 'mailboy', 7, 1, 0, '0576b1f7679d36bb302102597c6d602a', 'login', '1427678049', 'Inlogging: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36', '2024-06-20 11:44:30'),
+(55, 'mailboy', 5, 1, 0, '0576b1f7679d36bb302102597c6d602a', 'login', '1427678049', 'Inlogging: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36', '2024-06-20 12:13:59'),
+(56, 'mailboy', 7, 1, 0, '0576b1f7679d36bb302102597c6d602a', 'login', '1427678049', 'Inlogging: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36', '2024-06-20 12:18:02'),
+(57, 'mailboy', 7, 1, 0, '0576b1f7679d36bb302102597c6d602a', 'newaccount', '1427678049', 'Profilen blev ifylld för första gången av användaren', '2024-06-20 12:40:30'),
+(58, 'mailboy', 8, 1, 0, '0', 'usernew', '1427678049', 'Du registrerade kontot.', '2024-06-20 12:45:51'),
+(59, 'mailboy', 0, 1, 0, '0', 'register', '1427678049', 'Användaren registrerade sig.', '2024-06-20 12:45:51'),
+(60, 'mailboy', 8, 1, 0, '0576b1f7679d36bb302102597c6d602a', 'login', '1427678049', 'Inlogging: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36', '2024-06-20 12:45:57'),
+(61, 'mailboy', 8, 1, 0, '0576b1f7679d36bb302102597c6d602a', 'newaccount', '1427678049', 'Profilen blev ifylld för första gången av användaren', '2024-06-20 12:49:20'),
+(62, 'mailboy', 9, 1, 0, '0', 'usernew', '1427678049', 'Du registrerade kontot.', '2024-06-20 12:51:54'),
+(63, 'mailboy', 0, 1, 0, '0', 'register', '1427678049', 'Användaren registrerade sig.', '2024-06-20 12:51:54'),
+(64, 'mailboy', 9, 1, 0, '0576b1f7679d36bb302102597c6d602a', 'login', '1427678049', 'Inlogging: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36', '2024-06-20 12:52:09'),
+(65, 'mailboy', 9, 1, 0, '0576b1f7679d36bb302102597c6d602a', 'newaccount', '1427678049', 'Profilen blev ifylld för första gången av användaren', '2024-06-20 12:52:46'),
+(66, 'mailboy', 9, 1, 0, '0576b1f7679d36bb302102597c6d602a', 'login', '1427678049', 'Inlogging: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36', '2024-06-20 13:20:35'),
+(67, 'mailboy', 9, 1, 0, '0576b1f7679d36bb302102597c6d602a', 'login', '1427678049', 'Inlogging: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36', '2024-06-20 13:20:54'),
+(68, 'mailboy', 9, 1, 0, '0576b1f7679d36bb302102597c6d602a', 'login', '1427678049', 'Inlogging: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36', '2024-06-20 13:22:48'),
+(69, 'mailboy', 9, 1, 0, '0576b1f7679d36bb302102597c6d602a', 'login', '1427678049', 'Inlogging: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36', '2024-06-20 13:27:26'),
+(70, 'mailboy', 5, 1, 0, '0576b1f7679d36bb302102597c6d602a', 'login', '1427678049', 'Inlogging: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36', '2024-06-20 13:27:40');
 
 -- --------------------------------------------------------
 
@@ -313,7 +336,9 @@ CREATE TABLE `data_clients` (
 
 INSERT INTO `data_clients` (`id`, `clientid`, `brand`, `typeid`, `companyname`, `companyid`, `vatid`, `mbingo`, `msite`, `contactname`, `phone`, `phone2`, `email`, `active`, `countryid`, `town`, `added`, `updated`, `addeduid`, `updateduid`, `info`, `userid`, `address`, `invoiceaddress`, `paddress`, `pzip`, `ptown`, `iemail`, `iaddress`, `izip`, `itown`, `ilandid`, `plandid`, `isnailmail`, `afid`, `website`, `facebook`, `instagram`, `alliance`, `landskapsid`, `image`, `notes`, `adminnotes`, `orgemail`, `orgiemail`, `orgnew`, `orgadmin`, `closed`, `pud`, `brandid`, `bingoorganizerid`, `noinvoice`, `public`, `mainbrand`, `profilebkg`) VALUES
 (1, '484484887', 'mailboy', 5, 'Mailboy AB', '5592591266', '', 1, 1, 'Johan Norr', '0790067505', '', 'johan@moonserver.se', 1, 1, 'Årsunda', '1636585194', '1713660799', 0, 2, '', '', '1', '', 'Prärievägen 4', '81173', 'Årsunda', '', 'Prärievägen 4', '81173', 'Årsunda', 1, 1, 0, 1, 'mailboy.myhalo.se', '', '', '', 0, 'client.png', '', '', '', '', 0, 1, 0, 0, 1, 1, 1, 1, 'mailboy', NULL),
-(2, '484484887', 'mailboy', 5, 'Kund AB', '5592591266', '', 1, 1, 'Kalle Anka', '0790067505', '', 'kalle@anka.se', 1, 1, 'Årsunda', '1636585194', '1713660799', 0, 2, '', '', '1', '', 'Prärievägen 4', '81173', 'Årsunda', '', 'Prärievägen 4', '81173', 'Årsunda', 1, 1, 0, 1, 'kalleanka.se', '', '', '', 0, 'client.png', '', '', '', '', 0, 1, 0, 0, 1, 1, 1, 1, 'mailboy', NULL);
+(2, '484484887', 'mailboy', 5, 'Kund AB', '5592591266', '', 1, 1, 'Kalle Anka', '0790067505', '', 'kalle@anka.se', 1, 1, 'Årsunda', '1636585194', '1713660799', 0, 2, '', '', '1', '', 'Prärievägen 4', '81173', 'Årsunda', '', 'Prärievägen 4', '81173', 'Årsunda', 1, 1, 0, 1, 'kalleanka.se', '', '', '', 0, 'client.png', '', '', '', '', 0, 1, 0, 0, 1, 1, 1, 1, 'mailboy', NULL),
+(3, '2401166817', 'mailboy', 5, 'KALLEBOY3 AB', '123456789', NULL, 0, 0, 'Kalle SssBoy3', '0790067505', NULL, 'mailboy3@moonserver.nu', 1, 1, NULL, '1718880560', '1718880560', 0, 0, NULL, '8', NULL, NULL, 'Paradisäppelvägen 13', '12345', 'Ankeborg', NULL, 'Paradisäppelvägen 13', '12345', 'Ankeborg', 1, 1, 0, 1, NULL, NULL, NULL, NULL, 0, 'client.png', NULL, NULL, 'mailboy3@moonserver.nu', 'mailboy3@moonserver.nu', 0, 8, 0, 0, 1, 0, 0, 0, NULL, NULL),
+(4, '2407164631', 'mailboy', 5, 'KALLEBOY4 AB', '4444444444', NULL, 0, 0, 'Kalle Boy4', '0790067505', NULL, 'mailboy4@moonserver.nu', 1, 1, NULL, '1718880766', '1718880766', 0, 0, NULL, '9', NULL, NULL, 'Testgatan 2', '12345', 'Ankeborg', NULL, 'Testgatan 2', '12345', 'Ankeborg', 1, 1, 0, 1, NULL, NULL, NULL, NULL, 0, 'client.png', NULL, NULL, 'mailboy4@moonserver.nu', 'mailboy4@moonserver.nu', 0, 9, 0, 0, 1, 0, 0, 0, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -356,7 +381,9 @@ CREATE TABLE `data_clients_access` (
 INSERT INTO `data_clients_access` (`id`, `uid`, `cid`, `aid`, `added`, `addeduid`, `updated`, `updateduid`, `accepted`, `active`, `activesites`, `sitesid`, `activehalo`, `halosid`, `activebingo`, `bingosid`, `activehosting`, `hostingsid`, `activecards`, `cardsid`, `activedrives`, `drivesid`, `economy`, `sales`, `support`) VALUES
 (1, 2, 1, 9, '1643638104', 2, '1704711346', 2, 1, 1, 0, '', 0, '', 0, '', 0, '', 0, '', 0, '', 0, 0, 0),
 (4, 1, 1, 9, '1643638104', 2, '1704711346', 2, 1, 1, 0, '', 0, '', 0, '', 0, '', 0, '', 0, '', 0, 0, 0),
-(2, 5, 2, 3, '1643638104', 2, '1704711346', 2, 1, 1, 0, '', 0, '', 0, '', 0, '', 0, '', 0, '', 0, 0, 0);
+(2, 5, 2, 3, '1643638104', 2, '1704711346', 2, 1, 1, 0, '', 0, '', 0, '', 0, '', 0, '', 0, '', 0, 0, 0),
+(5, 8, 3, 3, '1718880560', 8, '1718880560', 8, 1, 1, 0, NULL, 0, NULL, 0, NULL, 0, NULL, 0, NULL, 0, NULL, 0, 0, 0),
+(6, 9, 4, 3, '1718880766', 9, '1718880766', 9, 1, 1, 0, NULL, 0, NULL, 0, NULL, 0, NULL, 0, NULL, 0, NULL, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -463,7 +490,10 @@ CREATE TABLE `data_messages` (
 --
 
 INSERT INTO `data_messages` (`id`, `fromuid`, `touid`, `header`, `message`, `history`, `signature`, `opened`, `openeddate`, `date`, `sent`, `datesent`) VALUES
-(1, 0, 6, 'Varmt välkommen till Mailboy', '<p>Vi hoppas du ska trivas hos oss och med våra tjänster.</p> <p>Om du undrar något, tveka inte att kontakta vår support, vi finns här för dig 24/7.<br> (Dock tillfällig, begränsad support på de stora svenska storhelgerna).</p>', NULL, 'Mvh, System', 0, 0, 1716413518, 0, NULL);
+(1, 0, 6, 'Varmt välkommen till Mailboy', '<p>Vi hoppas du ska trivas hos oss och med våra tjänster.</p> <p>Om du undrar något, tveka inte att kontakta vår support, vi finns här för dig 24/7.<br> (Dock tillfällig, begränsad support på de stora svenska storhelgerna).</p>', NULL, 'Mvh, System', 0, 0, 1716413518, 0, NULL),
+(2, 0, 7, 'Varmt välkommen till Mailboy', '<p>Vi hoppas du ska trivas hos oss och med våra tjänster.</p> <p>Om du undrar något, tveka inte att kontakta vår support, vi finns här för dig 24/7.<br> (Dock tillfällig, begränsad support på de stora svenska storhelgerna).</p>', NULL, 'Mvh, System', 0, 0, 1718875965, 0, NULL),
+(3, 0, 8, 'Varmt välkommen till Mailboy', '<p>Vi hoppas du ska trivas hos oss och med våra tjänster.</p> <p>Om du undrar något, tveka inte att kontakta vår support, vi finns här för dig 24/7.<br> (Dock tillfällig, begränsad support på de stora svenska storhelgerna).</p>', NULL, 'Mvh, System', 0, 0, 1718880351, 0, NULL),
+(4, 0, 9, 'Varmt välkommen till Mailboy', '<p>Vi hoppas du ska trivas hos oss och med våra tjänster.</p> <p>Om du undrar något, tveka inte att kontakta vår support, vi finns här för dig 24/7.<br> (Dock tillfällig, begränsad support på de stora svenska storhelgerna).</p>', NULL, 'Mvh, System', 0, 0, 1718880714, 0, NULL);
 
 -- --------------------------------------------------------
 
@@ -628,7 +658,10 @@ CREATE TABLE `data_pw_reset` (
 --
 
 INSERT INTO `data_pw_reset` (`id`, `user`, `receiver`, `uid`, `hash`, `pin`, `date_sent`, `date_expire`, `valid`, `brand`, `type`, `ip`) VALUES
-(1, NULL, 'mailboytest@moonserver.nu', 0, NULL, 774755, '2024-05-22 23:31:15', '2024-05-22 23:36:00', 'N', 'mailboy', 'email', '3562364093');
+(1, NULL, 'mailboytest@moonserver.nu', 0, NULL, 774755, '2024-05-22 23:31:15', '2024-05-22 23:36:00', 'N', 'mailboy', 'email', '3562364093'),
+(2, NULL, 'mailboy2@moonserver.nu', 0, NULL, 562379, '2024-06-20 11:32:16', '2024-06-20 11:37:00', 'N', 'mailboy', 'email', '1427678049'),
+(3, NULL, 'mailboy3@moonserver.nu', 0, NULL, 511623, '2024-06-20 12:45:29', '2024-06-20 12:50:00', 'N', 'mailboy', 'email', '1427678049'),
+(4, NULL, 'mailboy4@moonserver.nu', 0, NULL, 571619, '2024-06-20 12:51:35', '2024-06-20 12:56:00', 'N', 'mailboy', 'email', '1427678049');
 
 -- --------------------------------------------------------
 
@@ -766,7 +799,27 @@ INSERT INTO `data_sentmessages` (`id`, `brand`, `type`, `uid`, `rid`, `cid`, `me
 (38, 'mailboy', 'email', 0, 1, 0, '<b>Använd denna 6-siffriga KOD för att verifiera din e-postadress: </b><br><h1>774755</h1></p><p>Om det inte var du som begärde detta så kan du strunta i detta mailet.</p>', 'Verifiera din e-postadress - Mailboy', '2024-05-22 23:31:15', '3562364093', 'mailboytest@moonserver.nu'),
 (39, 'mailboy', 'email', 0, 1, 0, '<p>Vi hoppas du ska trivas hos oss och med våra tjänster. Logga in och utforska vad vi har att erbjuda.</p>\n<p>Om du undrar något, tveka inte att kontakta vår support, vi finns här för dig 24/7. Dock tillfällig, begränsad support på de stora svenska storhelgerna.</p>', 'Varmt välkommen till Mailboy', '2024-05-22 23:31:58', '3562364093', 'mailboytest@moonserver.nu'),
 (40, 'mailboy', 'email', 6, 1, 0, 'Det har skett en ny inloggning på ditt konto nyss.<br><br>\r\n        Datum: 2024-05-22 23:32<br>\r\n        App: Chrome<br>\r\n        IP: 212.85.92.189<br><br>\r\n        Om det inte var du, bör du byta ditt lösenord för att skydda ditt konto.<br><br>\r\n        Vänligen kontakta support om du behöver hjälp.\r\n        ', 'Ny inloggning på ditt konto - Mailboy', '2024-05-22 23:32:16', '3562364093', 'mailboytest@moonserver.nu'),
-(41, 'mailboy', 'email', 6, 1, 0, 'Det har skett en ny inloggning på ditt konto nyss.<br><br>\r\n        Datum: 2024-05-22 23:46<br>\r\n        App: Chrome<br>\r\n        IP: 212.85.92.189<br><br>\r\n        Om det inte var du, bör du byta ditt lösenord för att skydda ditt konto.<br><br>\r\n        Vänligen kontakta support om du behöver hjälp.\r\n        ', 'Ny inloggning på ditt konto - Mailboy', '2024-05-22 23:46:57', '3562364093', 'mailboytest@moonserver.nu');
+(41, 'mailboy', 'email', 6, 1, 0, 'Det har skett en ny inloggning på ditt konto nyss.<br><br>\r\n        Datum: 2024-05-22 23:46<br>\r\n        App: Chrome<br>\r\n        IP: 212.85.92.189<br><br>\r\n        Om det inte var du, bör du byta ditt lösenord för att skydda ditt konto.<br><br>\r\n        Vänligen kontakta support om du behöver hjälp.\r\n        ', 'Ny inloggning på ditt konto - Mailboy', '2024-05-22 23:46:57', '3562364093', 'mailboytest@moonserver.nu'),
+(42, 'mailboy', 'email', 1, 1, 0, 'Det har skett en ny inloggning på ditt konto nyss.<br><br>\r\n        Datum: 2024-06-03 17:17<br>\r\n        App: Chrome<br>\r\n        IP: 89.255.245.133<br><br>\r\n        Om det inte var du, bör du byta ditt lösenord för att skydda ditt konto.<br><br>\r\n        Vänligen kontakta support om du behöver hjälp.\r\n        ', 'Ny inloggning på ditt konto - Mailboy', '2024-06-03 17:17:42', '1509946757', 'mattias.ekendahl@elevera.org'),
+(43, 'mailboy', 'email', 6, 1, 0, 'Det har skett en ny inloggning på ditt konto nyss.<br><br>\r\n        Datum: 2024-06-20 10:52<br>\r\n        App: Chrome<br>\r\n        IP: 85.24.163.97<br><br>\r\n        Om det inte var du, bör du byta ditt lösenord för att skydda ditt konto.<br><br>\r\n        Vänligen kontakta support om du behöver hjälp.\r\n        ', 'Ny inloggning på ditt konto - Mailboy', '2024-06-20 10:52:20', '1427678049', 'mailboytest@moonserver.nu'),
+(44, 'mailboy', 'email', 0, 1, 0, '<b>Använd denna 6-siffriga KOD för att verifiera din e-postadress: </b><br><h1>562379</h1></p><p>Om det inte var du som begärde detta så kan du strunta i detta mailet.</p>', 'Verifiera din e-postadress - Mailboy', '2024-06-20 11:32:16', '1427678049', 'mailboy2@moonserver.nu'),
+(45, 'mailboy', 'email', 0, 1, 0, '<p>Vi hoppas du ska trivas hos oss och med våra tjänster. Logga in och utforska vad vi har att erbjuda.</p>\n<p>Om du undrar något, tveka inte att kontakta vår support, vi finns här för dig 24/7. Dock tillfällig, begränsad support på de stora svenska storhelgerna.</p>', 'Varmt välkommen till Mailboy', '2024-06-20 11:32:45', '1427678049', 'mailboy2@moonserver.nu'),
+(46, 'mailboy', 'email', 7, 1, 0, 'Det har skett en ny inloggning på ditt konto nyss.<br><br>\r\n        Datum: 2024-06-20 11:33<br>\r\n        App: Chrome<br>\r\n        IP: 85.24.163.97<br><br>\r\n        Om det inte var du, bör du byta ditt lösenord för att skydda ditt konto.<br><br>\r\n        Vänligen kontakta support om du behöver hjälp.\r\n        ', 'Ny inloggning på ditt konto - Mailboy', '2024-06-20 11:33:04', '1427678049', 'mailboy2@moonserver.nu'),
+(47, 'mailboy', 'email', 5, 1, 0, 'Det har skett en ny inloggning på ditt konto nyss.<br><br>\r\n        Datum: 2024-06-20 11:39<br>\r\n        App: Chrome<br>\r\n        IP: 85.24.163.97<br><br>\r\n        Om det inte var du, bör du byta ditt lösenord för att skydda ditt konto.<br><br>\r\n        Vänligen kontakta support om du behöver hjälp.\r\n        ', 'Ny inloggning på ditt konto - Mailboy', '2024-06-20 11:39:33', '1427678049', 'malin.lofling@gmail.com'),
+(48, 'mailboy', 'email', 7, 1, 0, 'Det har skett en ny inloggning på ditt konto nyss.<br><br>\r\n        Datum: 2024-06-20 11:44<br>\r\n        App: Chrome<br>\r\n        IP: 85.24.163.97<br><br>\r\n        Om det inte var du, bör du byta ditt lösenord för att skydda ditt konto.<br><br>\r\n        Vänligen kontakta support om du behöver hjälp.\r\n        ', 'Ny inloggning på ditt konto - Mailboy', '2024-06-20 11:44:30', '1427678049', 'mailboy2@moonserver.nu'),
+(49, 'mailboy', 'email', 5, 1, 0, 'Det har skett en ny inloggning på ditt konto nyss.<br><br>\r\n        Datum: 2024-06-20 12:13<br>\r\n        App: Chrome<br>\r\n        IP: 85.24.163.97<br><br>\r\n        Om det inte var du, bör du byta ditt lösenord för att skydda ditt konto.<br><br>\r\n        Vänligen kontakta support om du behöver hjälp.\r\n        ', 'Ny inloggning på ditt konto - Mailboy', '2024-06-20 12:13:59', '1427678049', 'malin.lofling@gmail.com'),
+(50, 'mailboy', 'email', 7, 1, 0, 'Det har skett en ny inloggning på ditt konto nyss.<br><br>\r\n        Datum: 2024-06-20 12:18<br>\r\n        App: Chrome<br>\r\n        IP: 85.24.163.97<br><br>\r\n        Om det inte var du, bör du byta ditt lösenord för att skydda ditt konto.<br><br>\r\n        Vänligen kontakta support om du behöver hjälp.\r\n        ', 'Ny inloggning på ditt konto - Mailboy', '2024-06-20 12:18:02', '1427678049', 'mailboy2@moonserver.nu'),
+(51, 'mailboy', 'email', 0, 1, 0, '<b>Använd denna 6-siffriga KOD för att verifiera din e-postadress: </b><br><h1>511623</h1></p><p>Om det inte var du som begärde detta så kan du strunta i detta mailet.</p>', 'Verifiera din e-postadress - Mailboy', '2024-06-20 12:45:29', '1427678049', 'mailboy3@moonserver.nu'),
+(52, 'mailboy', 'email', 0, 1, 0, '<p>Vi hoppas du ska trivas hos oss och med våra tjänster. Logga in och utforska vad vi har att erbjuda.</p>\n<p>Om du undrar något, tveka inte att kontakta vår support, vi finns här för dig 24/7. Dock tillfällig, begränsad support på de stora svenska storhelgerna.</p>', 'Varmt välkommen till Mailboy', '2024-06-20 12:45:51', '1427678049', 'mailboy3@moonserver.nu'),
+(53, 'mailboy', 'email', 8, 1, 0, 'Det har skett en ny inloggning på ditt konto nyss.<br><br>\r\n        Datum: 2024-06-20 12:45<br>\r\n        App: Chrome<br>\r\n        IP: 85.24.163.97<br><br>\r\n        Om det inte var du, bör du byta ditt lösenord för att skydda ditt konto.<br><br>\r\n        Vänligen kontakta support om du behöver hjälp.\r\n        ', 'Ny inloggning på ditt konto - Mailboy', '2024-06-20 12:45:57', '1427678049', 'mailboy3@moonserver.nu'),
+(54, 'mailboy', 'email', 0, 1, 0, '<b>Använd denna 6-siffriga KOD för att verifiera din e-postadress: </b><br><h1>571619</h1></p><p>Om det inte var du som begärde detta så kan du strunta i detta mailet.</p>', 'Verifiera din e-postadress - Mailboy', '2024-06-20 12:51:35', '1427678049', 'mailboy4@moonserver.nu'),
+(55, 'mailboy', 'email', 0, 1, 0, '<p>Vi hoppas du ska trivas hos oss och med våra tjänster. Logga in och utforska vad vi har att erbjuda.</p>\n<p>Om du undrar något, tveka inte att kontakta vår support, vi finns här för dig 24/7. Dock tillfällig, begränsad support på de stora svenska storhelgerna.</p>', 'Varmt välkommen till Mailboy', '2024-06-20 12:51:54', '1427678049', 'mailboy4@moonserver.nu'),
+(56, 'mailboy', 'email', 9, 1, 0, 'Det har skett en ny inloggning på ditt konto nyss.<br><br>\r\n        Datum: 2024-06-20 12:52<br>\r\n        App: Chrome<br>\r\n        IP: 85.24.163.97<br><br>\r\n        Om det inte var du, bör du byta ditt lösenord för att skydda ditt konto.<br><br>\r\n        Vänligen kontakta support om du behöver hjälp.\r\n        ', 'Ny inloggning på ditt konto - Mailboy', '2024-06-20 12:52:09', '1427678049', 'mailboy4@moonserver.nu'),
+(57, 'mailboy', 'email', 9, 1, 0, 'Det har skett en ny inloggning på ditt konto nyss.<br><br>\n        Datum: 2024-06-20 13:20<br>\n        App: Chrome<br>\n        IP: 85.24.163.97<br><br>\n        Om det inte var du, bör du byta ditt lösenord för att skydda ditt konto.<br><br>\n        Vänligen kontakta support om du behöver hjälp.\n        ', 'Ny inloggning på ditt konto - Mailboy', '2024-06-20 13:20:35', '1427678049', 'mailboy4@moonserver.nu'),
+(58, 'mailboy', 'email', 9, 1, 0, 'Det har skett en ny inloggning på ditt konto nyss.<br><br>\n        Datum: 2024-06-20 13:20<br>\n        App: Chrome<br>\n        IP: 85.24.163.97<br><br>\n        Om det inte var du, bör du byta ditt lösenord för att skydda ditt konto.<br><br>\n        Vänligen kontakta support om du behöver hjälp.\n        ', 'Ny inloggning på ditt konto - Mailboy', '2024-06-20 13:20:54', '1427678049', 'mailboy4@moonserver.nu'),
+(59, 'mailboy', 'email', 9, 1, 0, 'Det har skett en ny inloggning på ditt konto nyss.<br><br>\r\n        Datum: 2024-06-20 13:22<br>\r\n        App: Chrome<br>\r\n        IP: 85.24.163.97<br><br>\r\n        Om det inte var du, bör du byta ditt lösenord för att skydda ditt konto.<br><br>\r\n        Vänligen kontakta support om du behöver hjälp.\r\n        ', 'Ny inloggning på ditt konto - Mailboy', '2024-06-20 13:22:48', '1427678049', 'mailboy4@moonserver.nu'),
+(60, 'mailboy', 'email', 9, 1, 0, 'Det har skett en ny inloggning på ditt konto nyss.<br><br>\n        Datum: 2024-06-20 13:27<br>\n        App: Chrome<br>\n        IP: 85.24.163.97<br><br>\n        Om det inte var du, bör du byta ditt lösenord för att skydda ditt konto.<br><br>\n        Vänligen kontakta support om du behöver hjälp.\n        ', 'Ny inloggning på ditt konto - Mailboy', '2024-06-20 13:27:26', '1427678049', 'mailboy4@moonserver.nu'),
+(61, 'mailboy', 'email', 5, 1, 0, 'Det har skett en ny inloggning på ditt konto nyss.<br><br>\n        Datum: 2024-06-20 13:27<br>\n        App: Chrome<br>\n        IP: 85.24.163.97<br><br>\n        Om det inte var du, bör du byta ditt lösenord för att skydda ditt konto.<br><br>\n        Vänligen kontakta support om du behöver hjälp.\n        ', 'Ny inloggning på ditt konto - Mailboy', '2024-06-20 13:27:40', '1427678049', 'malin.lofling@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -863,10 +916,13 @@ CREATE TABLE `data_users` (
 
 INSERT INTO `data_users` (`id`, `brand`, `userid`, `pid`, `user_name`, `user_fname`, `user_sname`, `user_worktitle`, `user_adress1`, `user_adress2`, `countryid`, `user_city`, `user_zip`, `user_email`, `user_phone`, `user_pass`, `user_added`, `user_updated`, `user_notes`, `user_access`, `user_active`, `user_img`, `user_img_date`, `login_tries`, `using_tmp_pw`, `group_id`, `user_presentation`, `user_hidden`, `last_login`, `accepted_terms`, `accounttype_id`, `account_startdate`, `account_enddate`, `account_updated`, `client_id`, `gids`, `user_balance`, `user_reservedmoney`, `user_new`, `user_newclient`, `bbk_terms`, `gdpr_terms`, `findus`, `pcid`, `defaultcid`, `registered`, `brandid`, `exceptmail`, `defaultstart`, `defaultlanguageid`, `profilebkg`, `verifiedemail`, `verifiedphone`, `2fasms`, `closed`) VALUES
 (2, 'mailboy', '2302525279', '190000000000', 'system', 'Johan', 'Norr', 'SystemAdmin', 'Testgatan 1', NULL, 1, 'Teststan', '51110', 'johan@moonserver.se', '0790067505', '$2y$10$VA1OQp/bM90Liy1loax/Ke.EF6X8i6UFhI0FKpl68hF3ovcSWZiRS', '1636583948', '1713659696', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dignissim mauris quis velit sagittis, vitae gravida sapien suscipit. Mauris euismod pharetra mauris, sit amet porttitor lectus sodales sed. Phasellus tristique tellus in justo maximus, ut tristique ipsum mattis. Donec in sapien quis turpis facilisis commodo id eget leo. Vivamus eu ornare mauris, at condimentum nisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed imperdiet leo felis, vehicula tincidunt lacus malesuada id. Aliquam porttitor turpis quis velit luctus, nec elementum tortor volutpat. Fusce eget neque dapibus, porttitor purus at, sollicitudin lectus. Fusce sit amet libero turpis. Fusce sagittis augue vel lacus fringilla, vitae laoreet lacus pretium. Aliquam tincidunt sem ipsum, vitae gravida eros lacinia nec. Nulla dignissim, purus eget fermentum elementum, elit sem condimentum turpis, et iaculis ipsum risus vel leo. Pellentesque aliquam dui in consectetur consequat. Aliquam pellentesque diam sed eros lobortis sodales ut sit amet ligula.', 9, 1, 'sampleprofil.png', '1704486788', 5, 'N', 1, NULL, 0, '2024-05-22 23:21:01', 1, 4, '2021-06-01', '2099-12-24', '2021-05-30', 1, '', 0.00, 0.00, '', 0, '', 0, '', 0, 1, 1, 1, 0, '', 1, '', 1, 1, 0, 0),
-(1, 'mailboy', '2305372733', '190000000000', 'admin', 'Mattias', 'Ekendahl', 'SystemAdmin', '', NULL, 1, 'a', '1', 'mattias.ekendahl@elevera.org', '0790067505', '$2y$10$ETyRUZXHSLqsG1fdU4K8Su5kpCzcT0xkvS1hqiT2GfJLjWMjU3c1G', '1636585194', '1716412914', NULL, 9, 1, 'sampleprofil.png', '', 5, 'N', 1, NULL, 0, '2024-05-22 23:24:22', 1, 4, '2021-06-01', '2099-12-24', '2021-05-30', 1, '', 0.00, 0.00, '', 0, '', 0, '', 0, 1, 1, 1, 0, '', 0, '', 1, 0, 0, 0),
+(1, 'mailboy', '2305372733', '190000000000', 'admin', 'Mattias', 'Ekendahl', 'SystemAdmin', '', NULL, 1, 'a', '1', 'mattias.ekendahl@elevera.org', '0790067505', '$2y$10$ETyRUZXHSLqsG1fdU4K8Su5kpCzcT0xkvS1hqiT2GfJLjWMjU3c1G', '1636585194', '1716412914', NULL, 9, 1, 'sampleprofil.png', '', 5, 'N', 1, NULL, 0, '2024-06-03 17:17:42', 1, 4, '2021-06-01', '2099-12-24', '2021-05-30', 1, '', 0.00, 0.00, '', 0, '', 0, '', 0, 1, 1, 1, 0, '', 0, '', 1, 0, 0, 0),
 (4, 'mailboy', '2305372778', '190000000000', 'johan', 'Johan', 'Norr', '', NULL, NULL, 1, NULL, NULL, 'johan.norr84@gmail.com', '0790067505', '$2y$10$E91VYnzY3/CrrE7Fxsu2e.9nRxRq3hNlfkA4WydlyaCT2xMl82vJe', '1636585194', '1707397714', NULL, 1, 1, 'sampleprofil.png', '1670960266', 5, 'N', 1, NULL, 0, '2024-05-22 23:11:44', 1, 4, '2021-06-01', '2099-12-24', '2021-05-30', 0, '', 0.00, 0.00, '', 0, '', 0, '', 0, 0, 1, 1, 0, '', 0, '', 1, 0, 0, 0),
-(5, 'mailboy', '2402348555', '190000000000', NULL, 'Malin', 'Löfling', '', NULL, NULL, 1, NULL, NULL, 'malin.lofling@gmail.com', '0723297708', '$2y$10$0wBHF5JXL3g5u7MBIVFS4ugzY.CKCOaq2kTbn.29l0ZG8dBPtRS56', '1658428773', '2024-05-21 18:55:34', NULL, 3, 1, 'sampleprofil.png', '1711573540', 5, 'N', 1, NULL, 0, '2024-05-22 22:13:17', 1, 0, '', '', '', 0, '', 0.00, 0.00, '', 0, '', 1, 'Rekommendation', 0, 2, 1, 1, 0, '', 1, '', 1, 0, 0, 0),
-(6, 'mailboy', '2406963451', '0', NULL, 'Kalle', 'Svensson', NULL, NULL, NULL, 1, NULL, NULL, 'mailboytest@moonserver.nu', '0790067505', '$2y$10$npQplfLM7J/DOEk4u1c5FedLOJF0vW/ywJ7qyor.y3zJSg842Vh7C', '1716413518', '1716414352', NULL, 3, 1, 'nopic.png', NULL, 5, 'N', 1, NULL, 0, '2024-05-22 23:46:57', 1, 0, NULL, NULL, NULL, 0, NULL, 0.00, 0.00, '0', 0, NULL, 1, 'Google', 0, 0, 1, 1, 0, NULL, 0, NULL, 1, 0, 0, 0);
+(5, 'mailboy', '2402348555', '190000000000', NULL, 'Malin', 'Löfling', '', NULL, NULL, 1, NULL, NULL, 'malin.lofling@gmail.com', '0723297708', '$2y$10$0wBHF5JXL3g5u7MBIVFS4ugzY.CKCOaq2kTbn.29l0ZG8dBPtRS56', '1658428773', '2024-05-21 18:55:34', NULL, 3, 1, 'sampleprofil.png', '1711573540', 5, 'N', 1, NULL, 0, '2024-06-20 13:27:40', 1, 0, '', '', '', 0, '', 0.00, 0.00, '', 0, '', 1, 'Rekommendation', 0, 2, 1, 1, 0, '', 1, '', 1, 0, 0, 0),
+(6, 'mailboy', '2406963451', '0', NULL, 'Kalle', 'Svensson', NULL, NULL, NULL, 1, NULL, NULL, 'mailboytest@moonserver.nu', '0790067505', '$2y$10$npQplfLM7J/DOEk4u1c5FedLOJF0vW/ywJ7qyor.y3zJSg842Vh7C', '1716413518', '1716414352', NULL, 3, 1, 'nopic.png', NULL, 5, 'N', 1, NULL, 0, '2024-06-20 10:52:20', 1, 0, NULL, NULL, NULL, 0, NULL, 0.00, 0.00, '0', 0, NULL, 1, 'Google', 0, 0, 1, 1, 0, NULL, 0, NULL, 1, 0, 0, 0),
+(7, 'mailboy', '2409238319', '0', NULL, 'Kalle1', 'Boy', NULL, NULL, NULL, 1, NULL, NULL, 'mailboy2@moonserver.nu', '0790067505', '$2y$10$4TNlEnbulsYDf9oRRB/VWuHZq4CZgVXCBGt3GLct5oVE18hcwiwN6', '1718875965', '1718880030', NULL, 3, 1, 'nopic.png', NULL, 5, 'N', 1, NULL, 0, '2024-06-20 12:18:02', 1, 0, NULL, NULL, NULL, 0, NULL, 0.00, 0.00, '0', 0, NULL, 1, 'Google', 0, 0, 1, 1, 0, NULL, 0, NULL, 1, 0, 0, 0),
+(8, 'mailboy', '2403444715', '0', NULL, 'Kalle', 'sssBoy3', NULL, NULL, NULL, 1, NULL, NULL, 'mailboy3@moonserver.nu', '0790067505', '$2y$10$mBP0dvZmRzBpHmLSdAUtQuj46r2VHaKOreuy4TpEAwmdQcTe9B6be', '1718880351', '1718880560', NULL, 3, 1, 'nopic.png', NULL, 5, 'N', 1, NULL, 0, '2024-06-20 12:45:57', 1, 0, NULL, NULL, NULL, 0, NULL, 0.00, 0.00, '0', 0, NULL, 1, 'Google', 0, 0, 1, 1, 0, NULL, 0, NULL, 1, 0, 0, 0),
+(9, 'mailboy', '2406969943', '0', NULL, 'Kalle', 'Boy4', NULL, NULL, NULL, 1, NULL, NULL, 'mailboy4@moonserver.nu', '0790067505', '$2y$10$.qh21gIvEs5X9b.PaFIRe.B4/xtdQLNxVxhJZsU/MbHMvJYcoSKKa', '1718880714', '1718880766', NULL, 3, 1, 'nopic.png', NULL, 5, 'N', 1, NULL, 0, '2024-06-20 13:27:26', 1, 0, NULL, NULL, NULL, 0, NULL, 0.00, 0.00, '0', 0, NULL, 1, 'Google', 0, 0, 1, 1, 0, NULL, 0, NULL, 1, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -1030,7 +1086,7 @@ ALTER TABLE `data_access`
 -- AUTO_INCREMENT för tabell `data_activities`
 --
 ALTER TABLE `data_activities`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=71;
 
 --
 -- AUTO_INCREMENT för tabell `data_branding`
@@ -1042,13 +1098,13 @@ ALTER TABLE `data_branding`
 -- AUTO_INCREMENT för tabell `data_clients`
 --
 ALTER TABLE `data_clients`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT för tabell `data_clients_access`
 --
 ALTER TABLE `data_clients_access`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT för tabell `data_clienttypes`
@@ -1072,7 +1128,7 @@ ALTER TABLE `data_languages`
 -- AUTO_INCREMENT för tabell `data_messages`
 --
 ALTER TABLE `data_messages`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT för tabell `data_news`
@@ -1096,7 +1152,7 @@ ALTER TABLE `data_newsletters_sending`
 -- AUTO_INCREMENT för tabell `data_newsletters_users`
 --
 ALTER TABLE `data_newsletters_users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT för tabell `data_notifications`
@@ -1114,7 +1170,7 @@ ALTER TABLE `data_notifications_type`
 -- AUTO_INCREMENT för tabell `data_pw_reset`
 --
 ALTER TABLE `data_pw_reset`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT för tabell `data_resellers`
@@ -1126,7 +1182,7 @@ ALTER TABLE `data_resellers`
 -- AUTO_INCREMENT för tabell `data_sentmessages`
 --
 ALTER TABLE `data_sentmessages`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=62;
 
 --
 -- AUTO_INCREMENT för tabell `data_tasks`
@@ -1138,7 +1194,7 @@ ALTER TABLE `data_tasks`
 -- AUTO_INCREMENT för tabell `data_users`
 --
 ALTER TABLE `data_users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT för tabell `log_admin`
