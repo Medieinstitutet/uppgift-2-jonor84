@@ -5,10 +5,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\SubscriberController;
+use App\Http\Controllers\PublicController;
 
-Route::get('/', function () {
-    return view('auth.login');
-});
+Route::get('/', [PublicController::class, 'dashboard'])->name('public.dashboard');
+Route::get('/allnewsletters', [PublicController::class, 'allnewsletters'])->name('public.allnewsletters');
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/dashboard', function () {
