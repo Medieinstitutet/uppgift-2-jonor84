@@ -26,8 +26,14 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
     })->name('dashboard');
     Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
+
     Route::get('/client/dashboard', [ClientController::class, 'dashboard'])->name('client.dashboard');
+    Route::get('/client/mynewsletters', [ClientController::class, 'mynewsletters'])->name('client.mynewsletters');
+    Route::get('/client/mysubscribers', [ClientController::class, 'mysubscribers'])->name('client.mysubscribers');
+
     Route::get('/subscriber/dashboard', [SubscriberController::class, 'dashboard'])->name('subscriber.dashboard');
+    Route::get('/subscriber/allnewsletters', [SubscriberController::class, 'allnewsletters'])->name('subscriber.allnewsletters');
+    Route::get('/subscriber/mysubscriptions', [SubscriberController::class, 'mysubscriptions'])->name('subscriber.mysubscriptions');
 
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');

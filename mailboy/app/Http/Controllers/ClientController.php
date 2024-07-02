@@ -10,4 +10,15 @@ class ClientController extends Controller
     {
         return view('client.dashboard');
     }
+
+    public function mynewsletters()
+    {
+        return view('client.mynewsletters');
+    }
+
+    public function mysubscribers()
+    {
+        return view('client.mysubscribers');
+    }
+    
 }

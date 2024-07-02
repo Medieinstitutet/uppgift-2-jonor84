@@ -21,9 +21,21 @@
                             <x-nav-link :href="route('client.dashboard')" :active="request()->routeIs('client.dashboard')">
                                 {{ __('Client Dashboard') }}
                             </x-nav-link>
+                            <x-nav-link :href="route('client.mynewsletters')" :active="request()->routeIs('client.mynewsletters')">
+                                {{ __('My Newsletters') }}
+                            </x-nav-link>
+                            <x-nav-link :href="route('client.mysubscribers')" :active="request()->routeIs('client.mysubscribers')">
+                                {{ __('My Subscribers') }}
+                            </x-nav-link>
                         @elseif(auth()->user()->hasRole('subscriber'))
                             <x-nav-link :href="route('subscriber.dashboard')" :active="request()->routeIs('subscriber.dashboard')">
                                 {{ __('Subscriber Dashboard') }}
+                            </x-nav-link>
+                            <x-nav-link :href="route('subscriber.allnewsletters')" :active="request()->routeIs('subscriber.allnewsletters')">
+                                {{ __('All Newsletters') }}
+                            </x-nav-link>
+                            <x-nav-link :href="route('subscriber.mysubscriptions')" :active="request()->routeIs('subscriber.mysubscriptions')">
+                                {{ __('My Subscriptions') }}
                             </x-nav-link>
                         @endif
                     @endauth

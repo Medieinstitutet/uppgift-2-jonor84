@@ -10,4 +10,14 @@ class SubscriberController extends Controller
     {
         return view('subscriber.dashboard');
     }
+    
+    public function mysubscriptions()
+    {
+        return view('subscriber.mysubscriptions');
+    }
+
+    public function allnewsletters()
+    {
+        return view('subscriber.allnewsletters');
+    }
 }

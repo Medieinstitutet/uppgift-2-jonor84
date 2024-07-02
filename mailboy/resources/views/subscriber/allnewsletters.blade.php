@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
+            {{ __('All Newsletters') }}
         </h2>
     </x-slot>
 
@@ -9,7 +9,7 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
-                    {{ __("You're logged in! But something went wrong, we could not load right service for your role. Please contact support.") }}
+                    {{ __("You're logged in to Client!") }}
                     @if(auth()->check() && auth()->user()->hasRole(['admin', 'client', 'subscriber']))
                         <p>{{ __("Your role: ") }} {{ auth()->user()->roles->first()->name }}</p>
                     @endif
