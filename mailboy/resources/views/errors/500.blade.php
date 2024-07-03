@@ -29,7 +29,7 @@
                 <h1 class="text-9xl font-bold mb-4"><span>5</span><span>0</span><span>0</span></h1>
             </div>
             <h2 class="text-2xl font-semibold mb-8">You underestimate the power<br> of the dark side.</h2>
-            <a href="{{ route('public.dashboard') }}" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md transition duration-300 ease-in-out inline-block">
+            <a href="{{ route('dashboard') }}" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md transition duration-300 ease-in-out inline-block">
                 USE THE FORCE <i class="bi bi-magic"></i>
             </a>
         </div>
