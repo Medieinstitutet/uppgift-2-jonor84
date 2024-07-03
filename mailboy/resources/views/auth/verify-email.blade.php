@@ -15,7 +15,7 @@
 
             <div>
                 <x-primary-button>
-                    {{ __('Resend Verification Email') }}
+                    {{ __('Resend Verification Email') }}  <i class="bi bi-envelope-check ml-2"></i>
                 </x-primary-button>
             </div>
         </form>

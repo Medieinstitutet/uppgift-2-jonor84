@@ -55,7 +55,7 @@
                     <x-dropdown align="right" width="48">
                         <x-slot name="trigger">
                             <button class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150">
-                                <div>{{ Auth::user()->name }}</div>
+                                <div>{{ Auth::user()->name }} ({{ ucfirst(auth()->user()->roles->first()->name) }}) <i class="bi bi-person-circle ml-1" style="font-size: 18px;"></i></div>
 
                                 <div class="ms-1">
                                     <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -67,7 +67,7 @@
 
                         <x-slot name="content">
                             <x-dropdown-link :href="route('profile.edit')">
-                                {{ __('Profile') }}
+                            <i class="bi bi-person-fill mr-2" style="font-size: 18px;"></i> {{ __('Profile') }}  
                             </x-dropdown-link>
 
                             <form method="POST" action="{{ route('logout') }}">
@@ -76,13 +76,13 @@
                                 <x-dropdown-link :href="route('logout')"
                                         onclick="event.preventDefault();
                                                     this.closest('form').submit();">
-                                    {{ __('Log Out') }}
+                                    <i class="bi bi-box-arrow-in-left mr-2" style="font-size: 18px;"></i> {{ __('Logout') }} 
                                 </x-dropdown-link>
                             </form>
                         </x-slot>
                     </x-dropdown>
                 @else
-                    <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Login</a>
+                    <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500"><i class="bi bi-box-arrow-in-right"></i> LOG IN</a>
                 @endauth
             </div>
 
