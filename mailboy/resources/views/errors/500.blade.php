@@ -11,7 +11,7 @@
 
     <style>
         body {
-            background-image: url('starwars.jpg');
+            background-image: url('{{ asset('starwars.jpg') }}');
             background-size: cover;
             background-position: center;
             font-family: 'Montserrat', sans-serif;
