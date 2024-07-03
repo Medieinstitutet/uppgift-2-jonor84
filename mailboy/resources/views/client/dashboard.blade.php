@@ -1,8 +1,9 @@
 <x-app-layout>
     @if (auth()->check() && auth()->user()->hasRole('client'))
         <x-slot name="header">
-            <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                {{ __('Client Dashboard') }}
+            <h2 class="font-semibold text-xl text-gray-800 leading-tight flex items-center">
+                {{ __('Welcome, ') }} {{ Auth::user()->name }}
+                <img src="{{ asset('hellohand.webp') }}" alt="Dashboard Icon" class="ml-2 h-6 w-6">
             </h2>
         </x-slot>
 
