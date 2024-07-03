@@ -8,6 +8,7 @@
 
     <title>404</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
     <style>
         body {
@@ -29,7 +30,7 @@
             </div>
             <h2 class="text-2xl font-semibold mb-8">You underestimate the power<br> of the dark side.</h2>
             <a href="{{ route('public.dashboard') }}" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md transition duration-300 ease-in-out inline-block">
-                USE THE FORCE
+                USE THE FORCE <i class="bi bi-magic"></i>
             </a>
         </div>
     </div>
