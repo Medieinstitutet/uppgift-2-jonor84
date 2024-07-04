@@ -24,9 +24,6 @@
                             <x-nav-link :href="route('client.mynewsletters')" :active="request()->routeIs('client.mynewsletters')">
                                 {{ __('My Newsletters') }}
                             </x-nav-link>
-                            <x-nav-link :href="route('client.mysubscribers')" :active="request()->routeIs('client.mysubscribers')">
-                                {{ __('My Subscribers') }}
-                            </x-nav-link>
                         @elseif(auth()->user()->hasRole('subscriber'))
                             <x-nav-link :href="route('subscriber.dashboard')" :active="request()->routeIs('subscriber.dashboard')">
                                 {{ __('Subscriber Dashboard') }}

@@ -12,11 +12,14 @@ class ClientController extends Controller
         return view('client.dashboard');
     }
 
-    public function mysubscribers()
+    public function mysubscribers($newsletterId)
     {
-        return view('client.mysubscribers');
+        $newsletter = Newsletter::findOrFail($newsletterId);
+        $subscribers = $newsletter->subscribers;
+    
+        return view('client.mysubscribers', compact('newsletter', 'subscribers'));
     }
-
+    
     public function mynewsletters()
     {
         $clientNewsletters = auth()->user()->newsletters;

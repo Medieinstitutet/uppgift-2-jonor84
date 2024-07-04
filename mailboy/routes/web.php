@@ -42,7 +42,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
         Route::get('/client/mynewsletters/{id}/edit', [ClientController::class, 'editNewsletter'])->name('client.edit-newsletter');
         Route::put('/client/mynewsletters/{id}', [ClientController::class, 'updateNewsletter'])->name('client.update-newsletter');
         Route::delete('/client/mynewsletters/{id}', [ClientController::class, 'destroyNewsletter'])->name('client.destroy-newsletter');
-        Route::get('/client/mysubscribers', [ClientController::class, 'mysubscribers'])->name('client.mysubscribers');
+        Route::get('/client/mysubscribers/{newsletterId}', [ClientController::class, 'mysubscribers'])->name('client.mysubscribers');
+
     });
 
     // Subscriber routes

@@ -27,4 +27,13 @@ class Newsletter extends Model
     {
         return $this->belongsTo(User::class, 'addeduid');
     }
+
+    /**
+     * Get the subscribers of the newsletter.
+     */
+    public function subscribers()
+    {
+        return $this->belongsToMany(User::class, 'newsletters_subscribers', 'newsletter_id', 'user_id')
+                    ->withTimestamps();
+    }
 }
