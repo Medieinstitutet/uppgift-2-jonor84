@@ -11,11 +11,7 @@
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                     <div class="p-6 text-gray-900">
-                        {{ __("You're logged in as Subscriber!") }}
-                        <p>{{ __("Your role: ") }} {{ auth()->user()->roles->first()->name }}</p>
-
-                        {{-- Subscriber-specific content --}}
-                        <p>{{ __("Subscriber-specific content goes here.") }}</p>
+                        {{ __("Here you can see all newsletters and subscribe or unsubscribe to them!") }}
                     </div>
                 </div>
             </div>

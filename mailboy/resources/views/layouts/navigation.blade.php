@@ -29,10 +29,7 @@
                                 {{ __('Subscriber Dashboard') }}
                             </x-nav-link>
                             <x-nav-link :href="route('subscriber.allnewsletters')" :active="request()->routeIs('subscriber.allnewsletters')">
-                                {{ __('All Newsletters') }}
-                            </x-nav-link>
-                            <x-nav-link :href="route('subscriber.mysubscriptions')" :active="request()->routeIs('subscriber.mysubscriptions')">
-                                {{ __('My Subscriptions') }}
+                                {{ __('Newsletters') }}
                             </x-nav-link>
                         @endif
                     @else
@@ -40,7 +37,7 @@
                             {{ __('Start') }}
                         </x-nav-link>
                         <x-nav-link :href="route('public.allnewsletters')" :active="request()->routeIs('public.allnewsletters')">
-                            {{ __('All newsletters') }}
+                            {{ __('Newsletters') }}
                         </x-nav-link>
                     @endauth
                 </div>

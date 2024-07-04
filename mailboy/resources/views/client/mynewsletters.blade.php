@@ -22,7 +22,7 @@
                                 @foreach ($clientNewsletters as $newsletter)
                                     <li class="py-3 flex justify-between items-center">
                                         <div>
-                                            <h2>{{ $newsletter->name }} ({{ optional($newsletter->created_at)->format('M d, Y') ?? 'No Date Available' }}) 
+                                            <h2>{{ $newsletter->id }}: {{ $newsletter->name }} ({{ optional($newsletter->created_at)->format('M d, Y') ?? 'No Date Available' }}) 
                                                 @if ($newsletter->active == 1)
                                                     <i class="bi bi-check-circle-fill text-success"></i>
                                                 @else

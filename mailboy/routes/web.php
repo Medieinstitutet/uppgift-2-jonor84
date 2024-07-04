@@ -49,7 +49,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
     // Subscriber routes
     Route::middleware('auth')->group(function () {
         Route::get('/subscriber/dashboard', [SubscriberController::class, 'dashboard'])->name('subscriber.dashboard');
-        Route::get('/subscriber/allnewsletters', [SubscriberController::class, 'allnewsletters'])->name('subscriber.allnewsletters');
+        Route::get('/subscriber/allnewsletters', [SubscriberController::class, 'showActiveNewsletters'])->name('subscriber.allnewsletters');
+        Route::post('/subscriber/subscribe/{newsletterId}', [SubscriberController::class, 'subscribe'])->name('subscribe.newsletter');
+        Route::delete('/subscriber/unsubscribe/{newsletterId}', [SubscriberController::class, 'unsubscribe'])->name('unsubscribe.newsletter');
         Route::get('/subscriber/mysubscriptions', [SubscriberController::class, 'mysubscriptions'])->name('subscriber.mysubscriptions');
     });
 

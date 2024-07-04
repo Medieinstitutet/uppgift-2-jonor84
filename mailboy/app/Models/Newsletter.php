@@ -34,6 +34,6 @@ class Newsletter extends Model
     public function subscribers()
     {
         return $this->belongsToMany(User::class, 'newsletters_subscribers', 'newsletter_id', 'user_id')
-                    ->withTimestamps();
+        ->withTimestamps(); 
     }
 }

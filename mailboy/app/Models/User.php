@@ -53,7 +53,7 @@ class User extends Authenticatable
      * @param string|array $roles
      * @return bool
      */
-    
+
     public function hasRole($roles)
     {
         if (is_array($roles)) {
@@ -69,9 +69,18 @@ class User extends Authenticatable
     }
 
     /**
-     * Get the newsletters created by the user.
+     * Get the newsletters for the subscriber.
      */
     public function newsletters()
+    {
+        return $this->belongsToMany(Newsletter::class, 'newsletters_subscribers', 'user_id', 'newsletter_id');
+    }
+
+    /**
+     * Get the newsletters created by the client user.
+     */
+
+    public function mynewsletters()
     {
         return $this->hasMany(Newsletter::class, 'addeduid');
     }

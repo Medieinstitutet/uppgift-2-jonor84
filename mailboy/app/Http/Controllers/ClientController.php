@@ -15,14 +15,14 @@ class ClientController extends Controller
     public function mysubscribers($newsletterId)
     {
         $newsletter = Newsletter::findOrFail($newsletterId);
-        $subscribers = $newsletter->subscribers;
-    
+        $subscribers = $newsletter->subscribers()->get();
+
         return view('client.mysubscribers', compact('newsletter', 'subscribers'));
     }
     
     public function mynewsletters()
     {
-        $clientNewsletters = auth()->user()->newsletters;
+        $clientNewsletters = auth()->user()->mynewsletters;
         return view('client.mynewsletters', compact('clientNewsletters'));
     }
 
@@ -45,7 +45,7 @@ class ClientController extends Controller
             'active' => 'required|boolean',
         ]);
 
-        auth()->user()->newsletters()->create([
+        auth()->user()->mynewsletters()->create([
             'name' => $request->name,
             'description' => $request->description,
             'active' => $request->active,

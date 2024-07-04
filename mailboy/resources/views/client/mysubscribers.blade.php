@@ -16,7 +16,6 @@
                             <ul>
                                 @foreach ($newsletter->subscribers as $subscriber)
                                     <li>{{ $subscriber->name }} {{ $subscriber->lastname }} ({{ $subscriber->email }}) - Added: {{ $subscriber->pivot->created_at->format('M d, Y') }}</li>
-                                    <hr>
                                 @endforeach
                             </ul>
                         @endif
