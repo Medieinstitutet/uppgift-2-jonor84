@@ -20,6 +20,8 @@
                                             <div>
                                                 <strong>{{ $newsletter->name }}</strong>
                                                 ({{ optional($newsletter->created_at)->format('M d, Y') ?? 'No Date Available' }})
+                                                <p>{{ $newsletter->description }}</p>
+                                                <br>
                                             </div>
                                             <div>
                                                 @php
@@ -40,6 +42,7 @@
                                             </div>
                                         </div>
                                     </li>
+                                    <hr>
                                 @endforeach
                             </ul>
                         @endif
